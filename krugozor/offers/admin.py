@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import Offers
 
-# Register your models here.
+
+class OffersAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'city')
+
+
+admin.site.register(Offers, OffersAdmin)
