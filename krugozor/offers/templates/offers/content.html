@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -6,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Горизонт</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
@@ -27,7 +28,7 @@
                     <option value="">Санкт-Питербург</option>
                 </select>
                 <button class="right-header-mob" style="width: 30px;">
-                    <img src="img/icons/exit_white.png">
+                    <img src="{% static 'img/icons/exit_white.png' %}">
                 </button>
             </span>
             <a href="#">Главная</a>
@@ -49,7 +50,7 @@
                     <a href="#">Личный кабинет</a>
                 </span>
                 <button class="right-header-mob">
-                    <img src="img/icons/hamburger_white.png">
+                    <img src="{% static 'img/icons/hamburger_white.png' %}">
                 </button>
             </div>
         </div>
@@ -61,7 +62,7 @@
                 <div id="about-content">
                     <h1 id="name-content">Парамоновские склады</h1>
                     <div id="time-work">Время работы: Круглосуточно</div>
-                    <div id="reyting">Оценка пользователей: 4.5 <img src="img/icons/star.png"></div>
+                    <div id="reyting">Оценка пользователей: 4.5 <img src="{% static 'img/icons/star.png' %}"></div>
                     <div id="phone">Номер: +7(959)123-45-67</div>
                     <div id="adres">Адрес: Береговая ул., 47А, Ростов-на-Дону</div>
                 </div>
@@ -113,10 +114,10 @@
             </div>
             <div class="comment">
                 <div class="content-comment">
-                    <img src="img/icons/photo_2023-03-20_00-19-28.jpg" class="img-person">
+                    <img src="{% static 'img/icons/photo_2023-03-20_00-19-28.jpg' %}" class="img-person">
                     <div class="about-comment">
                         <div class="name-person-comment">Альберт Енакентьевич</div>
-                        <div class="reyting-comment">5 <img src="img/icons/star.png"></div>
+                        <div class="reyting-comment">5 <img src="{% static 'img/icons/star.png' %}"></div>
                         <div class="text-comment">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam iure quam sint
                                 unde placeat optio fugit iusto labore consequuntur. Magnam hic cupiditate corrupti
@@ -129,10 +130,10 @@
             </div>
             <div class="comment">
                 <div class="content-comment">
-                    <img src="img/icons/photo_2023-03-20_00-19-28.jpg" class="img-person">
+                    <img src="{% static 'img/icons/photo_2023-03-20_00-19-28.jpg' %}" class="img-person">
                     <div class="about-comment">
                         <div class="name-person-comment">Альберт Енакентьевич</div>
-                        <div class="reyting-comment">5 <img src="img/icons/star.png"></div>
+                        <div class="reyting-comment">5 <img src="{% static 'img/icons/star.png' %}"></div>
                         <div class="text-comment">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam iure quam sint
                                 unde placeat optio fugit iusto labore consequuntur. Magnam hic cupiditate corrupti
@@ -143,55 +144,7 @@
                     </div>
                 </div>
             </div>
-            <div class="comment">
-                <div class="content-comment">
-                    <img src="img/icons/photo_2023-03-20_00-19-28.jpg" class="img-person">
-                    <div class="about-comment">
-                        <div class="name-person-comment">Альберт Енакентьевич</div>
-                        <div class="reyting-comment">5 <img src="img/icons/star.png"></div>
-                        <div class="text-comment">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam iure quam sint
-                                unde placeat optio fugit iusto labore consequuntur. Magnam hic cupiditate corrupti
-                                debitis illo velit atque. Quo, nam architecto vero iusto aspernatur similique dicta
-                                illum veniam mollitia, inventore cupiditate assumenda veritatis recusandae delectus
-                                exercitationem enim iure unde quidem?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comment">
-                <div class="content-comment">
-                    <img src="img/icons/photo_2023-03-20_00-19-28.jpg" class="img-person">
-                    <div class="about-comment">
-                        <div class="name-person-comment">Альберт Енакентьевич</div>
-                        <div class="reyting-comment">5 <img src="img/icons/star.png"></div>
-                        <div class="text-comment">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam iure quam sint
-                                unde placeat optio fugit iusto labore consequuntur. Magnam hic cupiditate corrupti
-                                debitis illo velit atque. Quo, nam architecto vero iusto aspernatur similique dicta
-                                illum veniam mollitia, inventore cupiditate assumenda veritatis recusandae delectus
-                                exercitationem enim iure unde quidem?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <div class="content-comment">
-                    <img src="img/icons/photo_2023-03-20_00-19-28.jpg" class="img-person">
-                    <div class="about-comment">
-                        <div class="name-person-comment">Альберт Енакентьевич</div>
-                        <div class="reyting-comment">5 <img src="img/icons/star.png"></div>
-                        <div class="text-comment">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam iure quam sint
-                                unde placeat optio fugit iusto labore consequuntur. Magnam hic cupiditate corrupti
-                                debitis illo velit atque. Quo, nam architecto vero iusto aspernatur similique dicta
-                                illum veniam mollitia, inventore cupiditate assumenda veritatis recusandae delectus
-                                exercitationem enim iure unde quidem?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
         </div>
     </section>

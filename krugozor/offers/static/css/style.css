@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-my {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #efefef;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/* Intro */
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #00000085;
+}
+
+#container-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-header {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#right-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+#right-header a:hover {
+    text-decoration: underline;
+}
+
+#right-header select {
+    padding: 5px 7px;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+}
+
+#right-header a {
+    margin-left: 10px;
+}
+
+#intro {
+    background: url(../img/cities/rostov-on-don.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#intro-center {
+    padding: 120px 0;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#in-intro-center {
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #00000085;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+#intro-slogan {
+    font-size: 64px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#intro-dash {
+    height: 3px;
+    width: 50px;
+    background-color: white;
+    margin: 25px 0;
+}
+
+#intro-about {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#intro-center a {
+    background-color: #5446FF;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+    transition: ease 300ms;
+}
+
+#intro-center a:hover {
+    background-color: #ffffff;
+    color: #5446FF;
+    transition: ease 300ms;
+}
+
+/* Content */
+
+#content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.content {
+    background: #D9D9D9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+#name-of-content {
+    padding: 30px 0;
+}
+
+#watch_all_body {
+    background: #5446FF;
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+    height: 75px;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* footer */
+
+footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+}
+
+#container-footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-footer {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* mobile */
+
+.right-header-mob {
+    display: none;
+}
+
+#menu-mob {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: none;
+
+}
+
+#in-menu-mob {
+    display: flex;
+    padding: 30px;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+#in-menu-mob a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#in-menu-mob span select {
+    padding: 5px 7px;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: center;
+}
+
+#in-menu-mob span {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* all-offers */
+
+.name-of-content-all {
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+
+#header-full-black {
+    background: #000;
+}
+
+#filters {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.filter {
+    color: #000;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+#pages {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* content */
+
+#intro-content {
+    margin-top: 20px;
+}
+
+#container-intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+#img-intro {
+    height: 300px;
+    width: 500px;
+    background-image: url(https://key-ms.ru/wp-content/uploads/5/5/3/5537161ad5cbfbf5d2398cd0f21f171f.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-content {
+    margin-left: 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#about-content h1,
+#about-content div {
+    margin-bottom: 10px;
+}
+
+#description {
+    margin-top: 20px;
+}
+
+#content-description {
+    margin: 10px 0;
+}
+
+#comment-sect {
+    margin-top: 20px;
+}
+
+/* comment */
+
+.comment {
+    margin-top: 20px;
+}
+
+#name-sect-comment {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content-comment {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+.img-person {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.about-comment {
+    display: flex;
+    flex-flow: column;
+}
+
+.text-comment {
+    width: 100%;
+}
+
+.name-person-comment {
+    font-weight: bold;
+}
+
+#send-comment {
+    margin-top: 10px;
+}
+
+#write-comment select{
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+    .container-my {
+        margin: 0px 20px;
+    }
+
+    #content-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #intro-slogan {
+        font-size: 45px;
+    }
+
+    #intro-about {
+        font-size: 18px;
+    }
+
+    #watch_all_body {
+        font-size: 18px;
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 0px 20px;
+    }
+
+    #content-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #intro-slogan {
+        font-size: 45px;
+    }
+
+    #intro-about {
+        font-size: 18px;
+    }
+
+    #watch_all_body {
+        font-size: 18px;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    #container-footer {
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-around;
+    }
+
+    #img-intro{
+        width: 100%;
+    }
+
+    #about-content{
+        margin: 0px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #right-header {
+        display: none;
+    }
+
+    .right-header-mob {
+        display: block;
+        height: 30px;
+        width: 35px;
+        background: none;
+    }
+
+    .right-header-mob img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    #intro-slogan {
+        font-size: 35px;
+    }
+
+    #intro-about {
+        font-size: 16px;
+    }
+
+    #content-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+}
+
+.cities {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: none;
+    justify-content: center;
+}
+
+.in-menu-cities {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.in-menu-cities span a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.in-menu-cities span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choose-city {
+    align-self: flex-end;
+}
+
+.choose-city img {
+    width: 100%;
+    height: 100%;
+}
