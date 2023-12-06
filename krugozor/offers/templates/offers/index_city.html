@@ -23,7 +23,7 @@
             <span>
                 <a href="#"
                            style="background-color: black; padding: 10px; border-radius: 15px; text-decoration: none;"
-                           class="choose-city">Ростов-на-Дону
+                           class="choose-city">{{ city.title }}
                 </a>
                 <button class="right-header-mob" style="width: 30px;">
                     <img src="{% static 'img/icons/exit_white.png' %}">
@@ -58,7 +58,7 @@
                         <a href="{% url 'home' %}">Главная</a>
                         <a href="#"
                            style="background-color: black; padding: 10px; border-radius: 15px; text-decoration: none;"
-                           class="choose-city">Ростов-на-Дону</a>
+                           class="choose-city">{{ city.title }}</a>
                     </span>
                 <button class="right-header-mob">
                     <img src="{% static 'img/icons/hamburger_white.png' %}">
@@ -71,8 +71,7 @@
             <div id="in-intro-center">
                 <div id="intro-slogan">Открой для себя свой КРУГОЗОР</div>
                 <div id="intro-dash"></div>
-
-                <a href="{% url 'all_offers' 1 %}">Смотреть все предложения</a>
+                <a href="{% url 'all_offers' city.id %}">Смотреть все предложения</a>
             </div>
         </div>
     </div>
@@ -80,14 +79,14 @@
 <section id="sect-content">
     <div class="container-my">
         <div id="name-of-content">
-            <h2>Интересные места в городе Ростов-на-Дону</h2>
+            <h2>Интересные места в городе {{ city.title }}</h2>
         </div>
         <div id="content-container">
             {% for item in offers_filter %}
-            <a href="{% url 'content' item.id %}" class="content" style="background-image: url({{ item.picture.url }})"></a>
+            <a href="{% url 'content' item.id %}" class="content" style="background-image: url({{ item.picture.url }});" href="{{ item.pk }}"></a>
             {% endfor %}
         </div>
-        <a href="{% url 'all_offers' 1 %}" id="watch_all_body">Смотреть все предложения</a>
+        <a href="{% url 'all_offers' city.id %}" id="watch_all_body">Смотреть все предложения</a>
     </div>
 </section>
 <footer>
